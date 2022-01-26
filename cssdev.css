@@ -1,0 +1,63 @@
+
+.bg-gradiant{
+    height: 110vh;
+    width: 100%;
+    background-image: linear-gradient(45deg,rgb(18, 134, 211),rgb(8, 28, 212));
+}
+
+button {
+    padding: 30px 70px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 0px;
+    background: transparent;
+    position: relative;
+    transition: all .2s;
+    overflow: hidden;
+    color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
+  }
+  button::after {
+    content: '';
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    background-image: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
+    z-index: -1;
+    transition: all .5s;
+  }
+  button:hover::after {
+    transform: rotate(150deg);
+  }
+  
+  button:hover {
+    transform: translate(0,-6px);
+    box-shadow: 10px -10px 25px 0px rgba(143, 64, 248, .25), -10px 10px 25px 0px rgba(39, 200, 255, .25);
+  }
+  .effet_3d{
+    --couleur:0, 0, 0;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    font-family: 'Exo';
+    color: white;
+    text-shadow: 
+    0 1px 0 #ccc, 
+    0 2px 0 #acacac,
+    0 3px 0 #a0a0a0,
+    0 4px 0 #9b9a9a,
+    0 5px 0 #888787,
+    0 6px 1px rgba(var(--couleur),.1),
+    0 0 5px rgba(var(--couleur),.1),
+    0 1px 3px rgba(var(--couleur),.3),
+    0 3px 5px rgba(var(--couleur),.3),
+    0 5px 10px rgba(var(--couleur),.25),
+    0 10px 10px rgba(var(--couleur),.2),
+    0 20px 20px rgba(var(--couleur),.15);
+    font-size: calc(100vw / 10)
+      
+      }
+    
